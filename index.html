@@ -29,10 +29,12 @@
           $box = $(this);
           $box.flippy({
             color_target: $box.css('background-color'),
-            direction: 'RIGHT',
-            depth: 0.5,
+            direction: 'LEFT',
+            depth: 0.1,
+            light: 40,
             verso: $box.html(),
             duration: "500",
+            noCSS: true,
             onFinish: function(){
               $masonry_container.masonry( 'reload' );
             }
